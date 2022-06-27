@@ -1,0 +1,154 @@
+body{
+    font-family: sans-serif;
+}
+
+#clickme{
+    padding: 17px 23px;
+    background: #f2c94c;
+    border-radius: 8px;
+    border: solid 1px #f2c94c;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.move_box{
+    display: flex;
+    justify-content: center;
+}
+
+
+.weather{
+    padding: 20px;
+    background-color: crimson;
+    border-radius: 15px;
+    color: #f2c94c;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-position-x: 89%;
+    box-shadow: 9px 7px 10px black;
+    position: relative;
+}
+
+.celsius{
+    right: 13%;
+    position: absolute;
+}
+.wind_km_hour{
+    margin-left: 10%;
+}
+
+.title1{
+    margin-left: 150px;
+    color: #f2c94c;
+}
+
+.dayhour{
+    margin-left: 16%;
+    color: white;
+}
+
+/* TODO STYLES */
+.maincontainer{
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #f2c94c;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid wheat;
+}
+
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    outline: none;
+    color: wheat;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p{
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+    letter-spacing: 1px;
+    margin: 3%;
+}
+
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-btn i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item.completed p{
+    text-decoration: line-through;
+    color: black;
+} 
+
+.fa-circle-minus{
+    color: red;
+}
+
+.fa-check{
+    color: green;
+}
